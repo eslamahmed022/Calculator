@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/out"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@color/primaryColor"
         android:paddingTop="10pt"
         android:paddingBottom="10pt"
-        android:text="Hello World!"
+        android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/primaryTextColor"
         android:textSize="24sp"
@@ -53,10 +54,10 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
+                android:onClick="onClick"
                 android:text="+/-"
-                android:textSize="30sp"
 
-                 />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/bubrs"
@@ -66,9 +67,9 @@
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
 
+                android:onClick="onClick"
                 android:text="%"
-                android:textSize="30sp"
-                />
+                android:textSize="30sp" />
 
             <Button
                 android:id="@+id/budivision"
@@ -77,6 +78,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/secondaryColor"
+                android:onClick="onClick"
                 android:text="/"
                 android:textSize="30sp" />
         </TableRow>
@@ -90,9 +92,10 @@
                 android:id="@+id/bu7"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
-                android:layout_marginRight="1pt"
+                android:onClick="onClick"
                 android:text="7"
                 android:textSize="30sp" />
 
@@ -103,6 +106,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
+                android:onClick="onClick"
                 android:text="8"
                 android:textSize="30sp" />
 
@@ -110,9 +114,10 @@
                 android:id="@+id/bu9"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
-                android:layout_marginRight="1pt"
+                android:onClick="onClick"
                 android:text="9"
                 android:textSize="30sp" />
 
@@ -123,6 +128,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/secondaryColor"
+                android:onClick="onClick"
                 android:text="*"
                 android:textSize="30sp" />
         </TableRow>
@@ -136,9 +142,10 @@
                 android:id="@+id/bu4"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
-                android:layout_marginRight="1pt"
+                android:onClick="onClick"
                 android:text="4"
                 android:textSize="30sp" />
 
@@ -149,6 +156,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
+                android:onClick="onClick"
                 android:text="5"
                 android:textSize="30sp" />
 
@@ -156,9 +164,10 @@
                 android:id="@+id/bu6"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
-                android:layout_marginRight="1pt"
+                android:onClick="onClick"
                 android:text="6"
                 android:textSize="30sp" />
 
@@ -169,6 +178,7 @@
                 android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="@color/secondaryColor"
+                android:onClick="onClick"
                 android:text="-"
                 android:textSize="30sp" />
         </TableRow>
@@ -182,10 +192,11 @@
                 android:id="@+id/bu1"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_marginRight="1pt"
+                android:layout_weight="1"
 
                 android:background="?attr/colorButtonNormal"
+                android:onClick="onClick"
                 android:text="1"
                 android:textSize="30sp" />
 
@@ -193,10 +204,11 @@
                 android:id="@+id/bu2"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
-                android:layout_weight="1"
                 android:layout_marginRight="1pt"
+                android:layout_weight="1"
 
                 android:background="?attr/colorButtonNormal"
+                android:onClick="onClick"
                 android:text="2"
                 android:textSize="30sp" />
 
@@ -204,9 +216,10 @@
                 android:id="@+id/bu3"
                 android:layout_width="30dp"
                 android:layout_height="60dp"
+                android:layout_marginRight="1pt"
                 android:layout_weight="1"
                 android:background="?attr/colorButtonNormal"
-                android:layout_marginRight="1pt"
+                android:onClick="onClick"
                 android:text="3"
                 android:textSize="30sp" />
 
@@ -218,6 +231,7 @@
 
                 android:layout_weight="1"
                 android:background="@color/secondaryColor"
+                android:onClick="onClick"
                 android:text="+"
                 android:textSize="30sp" />
         </TableRow>
@@ -239,6 +253,7 @@
             android:layout_weight="1"
 
             android:background="?attr/colorButtonNormal"
+            android:onClick="onClick"
             android:text="0"
             android:textSize="30sp" />
 
@@ -258,9 +273,10 @@
             android:layout_height="60dp"
             android:layout_marginRight="1pt"
             android:layout_weight="1"
-            android:textSize="30sp"
             android:background="@color/secondaryColor"
-            android:text="=" />
+            android:onClick="onClick"
+            android:text="="
+            android:textSize="30sp" />
     </LinearLayout>
 
 </LinearLayout>
